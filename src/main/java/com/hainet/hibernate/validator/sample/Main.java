@@ -13,6 +13,7 @@ public class Main {
         ValidatedBean bean = new ValidatedBean(
                 1,
                 "12345678901",
+                "Password",
                 "foo",
                 "bar");
 
