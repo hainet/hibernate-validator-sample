@@ -1,0 +1,19 @@
+group 'com.hainet'
+version '1.0.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile('org.hibernate:hibernate-validator:6.0.4.Final')
+    compile('org.glassfish:javax.el:3.0.1-b08')
+    compile('org.springframework:spring-beans:5.0.1.RELEASE')
+
+    compileOnly('org.projectlombok:lombok:1.16.18')
+}
