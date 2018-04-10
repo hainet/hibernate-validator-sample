@@ -4,6 +4,7 @@ import javax.validation.ConstraintViolation;
 import javax.validation.Validation;
 import javax.validation.Validator;
 import javax.validation.ValidatorFactory;
+import java.time.LocalDate;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -18,7 +19,8 @@ public class Main {
                 "bar",
                 null,
                 "",
-                " ");
+                " ",
+                LocalDate.of(1970, 1, 1));
 
         ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
         Validator validator = factory.getValidator();

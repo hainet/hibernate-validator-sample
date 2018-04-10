@@ -5,6 +5,7 @@ import com.hainet.hibernate.validator.sample.constraints.Same;
 import lombok.Value;
 
 import javax.validation.constraints.*;
+import java.time.LocalDate;
 
 @Same(source = "foo", target = "bar")
 @Value
@@ -31,4 +32,7 @@ public class ValidatedBean {
 
     @NotBlank
     private String notBlank;
+
+    @Future
+    private LocalDate future;
 }
