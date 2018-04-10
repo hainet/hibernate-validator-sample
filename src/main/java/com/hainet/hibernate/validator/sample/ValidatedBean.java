@@ -4,8 +4,7 @@ import com.hainet.hibernate.validator.sample.constraints.Password;
 import com.hainet.hibernate.validator.sample.constraints.Same;
 import lombok.Value;
 
-import javax.validation.constraints.Min;
-import javax.validation.constraints.Size;
+import javax.validation.constraints.*;
 
 @Same(source = "foo", target = "bar")
 @Value
@@ -23,4 +22,13 @@ public class ValidatedBean {
     private String foo;
 
     private String bar;
+
+    @NotNull
+    private String notNUll;
+
+    @NotEmpty
+    private String notEmpty;
+
+    @NotBlank
+    private String notBlank;
 }

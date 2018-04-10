@@ -13,7 +13,7 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @ReportAsSingleViolation
 @Size(min = 8, max = 20)
-@Pattern(regexp = "[0-9a-z]*")
+@Pattern(regexp = "[0-9a-zA-Z]*")
 public @interface Password {
 
     String message() default "{com.hainet.hibernate.validator.sample.constraints.Password.message}";

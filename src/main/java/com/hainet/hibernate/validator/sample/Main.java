@@ -12,10 +12,13 @@ public class Main {
     public static void main(String[] args) {
         ValidatedBean bean = new ValidatedBean(
                 1,
-                "12345678901",
-                "Password",
+                "123",
+                "Password@",
                 "foo",
-                "bar");
+                "bar",
+                null,
+                "",
+                " ");
 
         ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
         Validator validator = factory.getValidator();
