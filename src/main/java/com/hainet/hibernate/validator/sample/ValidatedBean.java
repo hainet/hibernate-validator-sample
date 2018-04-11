@@ -35,4 +35,7 @@ public class ValidatedBean {
 
     @Future
     private LocalDate future;
+
+    @Past
+    private LocalDate past;
 }
